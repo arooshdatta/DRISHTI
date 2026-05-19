@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#faf9f8",
+                    "on-primary-fixed": "#001c39",
+                    "secondary-container": "#91f77e",
+                    "outline": "#717783",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f3f2",
+                    "surface-container-high": "#e9e8e7",
+                    "inverse-surface": "#2f3130",
+                    "surface-dim": "#dadad9",
+                    "on-primary-fixed-variant": "#004883",
+                    "on-secondary-fixed-variant": "#005303",
+                    "on-tertiary-fixed-variant": "#743500",
+                    "on-tertiary-fixed": "#311300",
+                    "primary": "#005faa",
+                    "surface-container-highest": "#e3e2e1",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#faf9f8",
+                    "tertiary-fixed": "#ffdbc8",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#a3c9ff",
+                    "on-secondary-fixed": "#002200",
+                    "tertiary": "#974700",
+                    "on-secondary-container": "#007306",
+                    "background": "#faf9f8",
+                    "primary-fixed": "#d3e3ff",
+                    "on-tertiary-container": "#ffffff",
+                    "surface-container": "#efeeed",
+                    "tertiary-container": "#bc5b00",
+                    "on-surface-variant": "#404752",
+                    "outline-variant": "#c0c7d4",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#a3c9ff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#79dd68",
+                    "on-primary-container": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb689",
+                    "secondary-fixed": "#94fa81",
+                    "surface-tint": "#0060ab",
+                    "on-surface": "#1a1c1c",
+                    "on-background": "#1a1c1c",
+                    "surface-variant": "#e3e2e1",
+                    "inverse-on-surface": "#f1f0ef",
+                    "secondary": "#006e06",
+                    "primary-container": "#0078d4",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf9f8]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0px_8px_32px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-all duration-300 ease-in-out rounded-full">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</button>
+<h1 class="text-xl font-bold text-slate-900 dark:text-slate-100 font-sans tracking-tight">Drishti AI</h1>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-primary font-semibold text-sm hidden md:block">Insights active</span>
+<div class="h-10 w-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a professional male user with friendly expression and neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlFGomORJrtlywTsgdVliiOH2f8-ozJkZp-ax-3t2sWRu2adSYgCwCR47lwtue3JogVyO-6vzaHd2_UoAG21UM1Xc9no5uUmOgiMcDpgY7AsTNx5hl_OTB4bnd4uouWt5UQ1Ehka1fj0nEAl8qIUKtMl7EFdJJdVknPQLPs82tJO1y26vk4JgK5boZpZaHcILEp_uUSamwLoSH3qcibvTqycQFfpFYf16gNdvNLKbUohTCbWKoj-voDshDV-OnHeIivkAkIhSW271w"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto space-y-8">
+<!-- Editorial Header -->
+<div class="space-y-2">
+<p class="text-primary font-semibold tracking-wider text-xs uppercase">Performance Analysis</p>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Clinical Insights</h2>
+<p class="text-on-surface-variant text-md max-w-2xl leading-relaxed">Your digital wellness metrics are synthesized from real-time monitoring to provide actionable ocular health scores.</p>
+</div>
+<!-- Bento Grid Insights -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Daily Screen Time vs Break Compliance -->
+<div class="md:col-span-8 glass-card rounded-xl p-6 shadow-[0px_8px_32px_rgba(0,0,0,0.04)] bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-lg font-bold text-on-surface">Screen Time &amp; Breaks</h3>
+<p class="text-sm text-on-surface-variant">Daily correlation between activity and rest</p>
+</div>
+<div class="flex gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-primary/5 rounded-full">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-[10px] font-bold text-primary uppercase">Screen</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-secondary/5 rounded-full">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="text-[10px] font-bold text-secondary uppercase">Breaks</span>
+</div>
+</div>
+</div>
+<div class="relative h-64 w-full flex items-end justify-between gap-4 px-2">
+<!-- Fake Chart Visualization -->
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[70%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/20 rounded-b-lg h-[20%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Mon</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[85%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/20 rounded-b-lg h-[10%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Tue</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[60%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/60 rounded-b-lg h-[35%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Wed</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[75%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/20 rounded-b-lg h-[15%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Thu</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[95%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/10 rounded-b-lg h-[5%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Fri</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full flex flex-col justify-end items-center h-full gap-1">
+<div class="w-full bg-primary/10 rounded-t-lg h-[40%] group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-full bg-secondary/80 rounded-b-lg h-[50%]"></div>
+</div>
+<span class="text-[11px] font-medium text-outline">Sat</span>
+</div>
+</div>
+</div>
+<!-- Fatigue Trends -->
+<div class="md:col-span-4 glass-card rounded-xl p-6 bg-surface-container-lowest shadow-[0px_8px_32px_rgba(0,0,0,0.04)] border-none">
+<div class="mb-6">
+<h3 class="text-lg font-bold text-on-surface">Fatigue Levels</h3>
+<p class="text-sm text-on-surface-variant">Estimated strain index</p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-semibold">
+<span class="text-on-surface">Current Index</span>
+<span class="text-tertiary">Moderate</span>
+</div>
+<div class="h-3 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-[65%] bg-gradient-to-r from-secondary to-tertiary rounded-full"></div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">warning</span>
+<p class="text-xs font-medium leading-relaxed text-on-surface-variant">Fatigue usually peaks at 3:00 PM. Schedule a mandatory 5-min walk-away then.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-2">
+<div class="p-3 bg-surface text-center rounded-lg">
+<p class="text-[10px] text-outline font-bold uppercase">Peak Fatigue</p>
+<p class="text-lg font-bold text-on-surface">3:15 PM</p>
+</div>
+<div class="p-3 bg-surface text-center rounded-lg">
+<p class="text-[10px] text-outline font-bold uppercase">Recovery</p>
+<p class="text-lg font-bold text-on-surface">12m avg</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Blink Rate Analysis -->
+<div class="md:col-span-6 glass-card rounded-xl p-6 bg-surface-container-lowest shadow-[0px_8px_32px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-on-surface">Blink Rate Analysis</h3>
+<p class="text-sm text-on-surface-variant">Average blinks per minute (BPM)</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-end justify-between gap-1 h-32 px-2">
+<!-- Waveform mock -->
+<div class="w-1.5 bg-primary-container h-8 rounded-full opacity-40"></div>
+<div class="w-1.5 bg-primary-container h-12 rounded-full opacity-50"></div>
+<div class="w-1.5 bg-primary-container h-16 rounded-full opacity-60"></div>
+<div class="w-1.5 bg-primary-container h-24 rounded-full"></div>
+<div class="w-1.5 bg-primary-container h-20 rounded-full opacity-80"></div>
+<div class="w-1.5 bg-primary-container h-14 rounded-full opacity-60"></div>
+<div class="w-1.5 bg-primary-container h-28 rounded-full"></div>
+<div class="w-1.5 bg-primary-container h-24 rounded-full opacity-80"></div>
+<div class="w-1.5 bg-primary-container h-10 rounded-full opacity-50"></div>
+<div class="w-1.5 bg-primary-container h-18 rounded-full opacity-70"></div>
+<div class="w-1.5 bg-primary-container h-32 rounded-full"></div>
+<div class="w-1.5 bg-primary-container h-20 rounded-full opacity-80"></div>
+<div class="w-1.5 bg-primary-container h-12 rounded-full opacity-50"></div>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-surface-container-high">
+<div class="text-center">
+<span class="block text-2xl font-extrabold text-on-surface">14.2</span>
+<span class="text-[10px] text-outline font-bold uppercase">Avg BPM</span>
+</div>
+<div class="h-8 w-[1px] bg-surface-container-high"></div>
+<div class="text-center">
+<span class="block text-2xl font-extrabold text-secondary">Optimal</span>
+<span class="text-[10px] text-outline font-bold uppercase">Health Status</span>
+</div>
+<div class="h-8 w-[1px] bg-surface-container-high"></div>
+<div class="text-center">
+<span class="block text-2xl font-extrabold text-on-surface">-8%</span>
+<span class="text-[10px] text-outline font-bold uppercase">Vs Goal</span>
+</div>
+</div>
+</div>
+</div>
+<!-- AI-Generated Tips (Incentive block) -->
+<div class="md:col-span-6 rounded-xl overflow-hidden relative group">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="serene morning sunbeams filtering through a clean minimalist room with a green plant in the corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHX2Ldtu1YsuQHCmk1ypgL6WevVz04J8SyFwPSuFb0ahLOisN7sWUp3gapBj_ngJiUdZet-FihylQlMwNDNIO2HDTz4BsNfl8HHemwdPke4vU6seDHP1gklKwnrID8VB17fridrDPpADizzabsEStheNrkN7ATDgSXGHgLk29IYt1lp-0zn1urpqEnytpkv-p4fSjuHF3zHxc2yKHSRF5aCgQGh5RuyFewuqgJt9Mz2vuHZyFvcyJNEG3FXA6RU1J06gmDB_d9Lb9X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
+<div class="relative h-full p-8 flex flex-col justify-end text-white">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full w-fit mb-4">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">AI Clinical Advisory</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Habit Incentive: The 20-20-20 Ritual</h4>
+<p class="text-sm text-white/80 leading-relaxed mb-6">Your data suggests focused working blocks of 42 minutes. To maintain optimal blink rate, look at an object 20 feet away for 20 seconds every 20 minutes. You've unlocked a 'Focus Master' badge for yesterday's compliance!</p>
+<button class="w-full bg-white text-on-surface py-3 rounded-xl font-bold text-sm shadow-xl hover:bg-surface-container-low transition-colors">Apply Habit Suggestion</button>
+</div>
+</div>
+</div>
+<!-- Monthly Trends Summary -->
+<section class="mt-12 pb-12">
+<h3 class="text-lg font-bold mb-6 text-on-surface">Regional Wellness Map</h3>
+<div class="w-full h-64 rounded-2xl overflow-hidden shadow-lg border border-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="minimalist aesthetic map of a metropolitan area with soft pastel color coding for data visualization" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTH8tizJuk7GaZSCY2s0_q-MSMinWbvFb1w2EwjefdK5pRPnwRgpYp7RsS-PdmXTpUKV_JiSR0SgwdgkkN-X251vnAI1Ca2o2PfdfpGCOCqIZht3TwFm5cO55ID-NcPyc_dkAlVjJPWSSkhJOS6e9dxsSCweLtDwyKnaT3Olwdm9X3AhXrqoafYOUPRbFJ7kWg1HNU9FM8xKR21NUyWT6aDjthQrqC5bCD5CFByREmrGpxh2gtsW5Y-RoCOl6vL6bV5WeCKmVozERB"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-2 pb-safe-bottom h-20 bg-white/70 dark:bg-slate-900/70 backdrop-blur-2xl rounded-t-2xl z-50 shadow-[0px_-4px_24px_rgba(0,0,0,0.02)]">
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:scale-95 transition-transform hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl px-4 py-1.5" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:scale-95 transition-transform hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl px-4 py-1.5" href="#">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Exercises</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#0078D4]/10 text-[#0078D4] rounded-xl px-4 py-1.5 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:scale-95 transition-transform hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl px-4 py-1.5" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[11px] font-medium tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>

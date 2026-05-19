@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#faf9f8",
+                    "on-primary-fixed": "#001c39",
+                    "secondary-container": "#91f77e",
+                    "outline": "#717783",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f3f2",
+                    "surface-container-high": "#e9e8e7",
+                    "inverse-surface": "#2f3130",
+                    "surface-dim": "#dadad9",
+                    "on-primary-fixed-variant": "#004883",
+                    "on-secondary-fixed-variant": "#005303",
+                    "on-tertiary-fixed-variant": "#743500",
+                    "on-tertiary-fixed": "#311300",
+                    "primary": "#005faa",
+                    "surface-container-highest": "#e3e2e1",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#faf9f8",
+                    "tertiary-fixed": "#ffdbc8",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#a3c9ff",
+                    "on-secondary-fixed": "#002200",
+                    "tertiary": "#974700",
+                    "on-secondary-container": "#007306",
+                    "background": "#faf9f8",
+                    "primary-fixed": "#d3e3ff",
+                    "on-tertiary-container": "#ffffff",
+                    "surface-container": "#efeeed",
+                    "tertiary-container": "#bc5b00",
+                    "on-surface-variant": "#404752",
+                    "outline-variant": "#c0c7d4",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#a3c9ff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#79dd68",
+                    "on-primary-container": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb689",
+                    "secondary-fixed": "#94fa81",
+                    "surface-tint": "#0060ab",
+                    "on-surface": "#1a1c1c",
+                    "on-background": "#1a1c1c",
+                    "surface-variant": "#e3e2e1",
+                    "inverse-on-surface": "#f1f0ef",
+                    "secondary": "#006e06",
+                    "primary-container": "#0078d4",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full z-50 bg-[#faf9f8]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0px_8px_32px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 transition-all duration-300 ease-in-out hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-full">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-400">menu</span>
+</button>
+<h1 class="text-xl font-bold text-slate-900 dark:text-slate-100 font-sans tracking-tight">Drishti AI</h1>
+</div>
+<div class="flex items-center gap-4">
+<nav class="hidden md:flex gap-6 mr-6">
+<span class="text-[#0078D4] font-medium transition-all duration-300 ease-in-out cursor-pointer">Clinical Profile</span>
+<span class="text-slate-600 dark:text-slate-400 font-medium hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-all duration-300 ease-in-out cursor-pointer px-3 py-1 rounded-lg">History</span>
+</nav>
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="professional headshot of a person with friendly expression, soft lighting, clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCajodYUdcHZAWDirfPNGhH7xLoyagSp3qp0lZLus42qn0G_wrDKWa_uBog6xWQzFM7GJkxR_MLxi_yGBhgAohKiQOw_Y5gQoxoGFUMTRHZ8U9psr6Jgb9RMqCzm6ihCTPI0wpgQMseFJAz-HFdc7dyQCML2GPXVL2ogDRYoB16bY7oCpaPG-UKjB5gKRjdHRX0plvgii6cHuSL7G5u7Kqlkco5GpZHNwvKn3Yq_JV9k9D90Eu2NwIiLk357ATnnFIsc170JILu43hn"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 max-w-3xl mx-auto">
+<!-- Editorial Header Section -->
+<header class="mb-10">
+<div class="flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-sm">shield</span>
+<span class="text-sm font-semibold tracking-wider uppercase font-label">Step 2 of 4</span>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface mb-3">Clinical Eye Profile</h2>
+<p class="text-on-surface-variant text-md leading-relaxed">Provide your baseline vision data to calibrate our AI diagnostics. This information is stored securely using medical-grade encryption.</p>
+</header>
+<!-- Main Form Content -->
+<div class="space-y-6">
+<!-- Question: Corrective Lenses -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-[0px_8px_32px_rgba(0,0,0,0.04)] transition-all duration-300">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">eyeglasses</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Do you wear glasses?</h3>
+<p class="text-xs text-on-surface-variant">Includes contact lenses or reading aids</p>
+</div>
+</div>
+<!-- Custom Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Conditional Power Input -->
+<div class="space-y-4 pt-4 border-t border-surface-container-low">
+<div class="flex items-center justify-between mb-2">
+<label class="text-sm font-semibold text-on-surface-variant">Prescription Power (Diopters)</label>
+<button class="text-primary text-xs flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                            How to read your Rx?
+                        </button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<span class="text-[11px] font-bold text-outline uppercase tracking-widest ml-1">OD (Right Eye)</span>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all" type="text" value="-2.75"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-outline text-xs">SPH</span>
+</div>
+</div>
+<div class="space-y-2">
+<span class="text-[11px] font-bold text-outline uppercase tracking-widest ml-1">OS (Left Eye)</span>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all" type="text" value="-2.50"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-outline text-xs">SPH</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Question: Medical Conditions -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-[0px_8px_32px_rgba(0,0,0,0.04)]">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">clinical_notes</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Existing Conditions</h3>
+<p class="text-xs text-on-surface-variant">Select any that apply to your medical history</p>
+</div>
+</div>
+<button class="p-2 text-outline hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined">help</span>
+</button>
+</div>
+<!-- Tag Picker / Combobox -->
+<div class="relative mb-4">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-xl pl-12 pr-4 py-3 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search conditions (e.g. Glaucoma...)" type="text"/>
+</div>
+<div class="flex flex-wrap gap-2 mt-4">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-sm font-medium flex items-center gap-2">
+                        Myopia <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary text-sm font-medium flex items-center gap-2">
+                        Dry Eye <span class="material-symbols-outlined text-xs">close</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                        Astigmatism
+                    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                        Glaucoma
+                    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                        Cataracts
+                    </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all">
+                        Diabetic Retinopathy
+                    </button>
+</div>
+</section>
+<!-- Data Transparency Card -->
+<section class="bg-primary/5 rounded-xl p-6 flex gap-4 items-start border border-primary/10">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">How is this data used?</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Drishti AI uses these parameters to differentiate between pre-existing refractive errors and acute eye fatigue patterns. Your medical profile is never shared with third parties.</p>
+<button class="mt-3 text-sm font-bold text-primary underline decoration-2 underline-offset-4">Read Data Privacy Protocol</button>
+</div>
+</section>
+<!-- Action Buttons -->
+<div class="pt-4 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-on-primary font-bold py-4 rounded-xl shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Complete Profile
+                </button>
+<button class="px-8 bg-surface-container-high text-on-surface-variant font-bold py-4 rounded-xl hover:bg-surface-container-highest transition-all">
+                    Skip for Now
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-2 pb-safe-bottom h-20 bg-white/70 dark:bg-slate-900/70 backdrop-blur-2xl rounded-t-2xl z-50 shadow-[0px_-4px_24px_rgba(0,0,0,0.02)] md:hidden">
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all px-4 py-1.5 rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all px-4 py-1.5 rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Exercises</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all px-4 py-1.5 rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">insights</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Insights</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#0078D4]/10 text-[#0078D4] rounded-xl px-4 py-1.5 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</div>
+</nav>
+</body></html>
