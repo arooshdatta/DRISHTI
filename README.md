@@ -14,7 +14,6 @@
 
 [![Live Demo](https://img.shields.io/badge/View_Live_Project-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://drishti-live-129481.web.app)
 
-*(Replace `https://drishti-live-129481.web.app` with your actual deployed link)*
 
 </div>
 
