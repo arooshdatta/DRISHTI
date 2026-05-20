@@ -19,7 +19,7 @@
 
 <br />
 
-![Drishti Hero Image](docs/assets/hero_banner.png) 
+<img width="1901" height="792" alt="image" src="https://github.com/user-attachments/assets/3baa6930-97e5-4200-95d9-6bd3260ad55d" />
 
 ---
 
@@ -68,15 +68,14 @@ With global screen time reaching unprecedented highs, **Computer Vision Syndrome
 
 ## 🖼️ Gallery & UI
 
-*(Replace the paths below with screenshots of your actual application)*
-
 <div align="center">
-  <img src="docs/assets/dashboard.png" alt="Clinical Dashboard" width="800"/>
+  <img width="752" height="597" alt="image" src="https://github.com/user-attachments/assets/1a1d16fc-a565-4232-bd46-261ff178f727" />
+
   <p><i>Real-time ocular metrics tracking, fatigue charts, and rPPG heart rate index.</i></p>
 
   <br />
 
-  <img src="docs/assets/virtual_mirror.png" alt="AR Virtual Mirror" width="800"/>
+  <img width="1918" height="860" alt="image" src="https://github.com/user-attachments/assets/d91d1fab-52b2-45d1-ad80-420c14e7fce1" />
   <p><i>AR-powered specs try-on overlay with automatic tracking and scaling.</i></p>
 </div>
 
@@ -113,7 +112,7 @@ Follow these steps to set up and run Drishti locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/arooshdatta/DRISHTI.git](https://github.com/arooshdatta/DRISHTI.git)
+git clone [https://github.com/arooshdatta/Drishti--The-Ocular-Guardian.git](https://github.com/arooshdatta/Drishti--The-Ocular-Guardian.git)
 cd Drishti/frontend
 ```
 
